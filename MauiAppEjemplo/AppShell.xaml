@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiAppEjemplo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppEjemplo"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+        
+        <ShellContent
+        Title="Earth (C-137)"
+        ContentTemplate="{DataTemplate local:EarthC137Page}"
+        Route="EarthC137Page" />
+
+        <ShellContent
+        Title="Earth (Replace Dimension)"
+        ContentTemplate="{DataTemplate local:EarthRDPage}"
+        Route="EarthRDPage" />
+
+        <ShellContent
+        Title="Unknown"
+        ContentTemplate="{DataTemplate local:unknownPage}"
+        Route="unknownPage" />
+
+    </TabBar>
+
+</Shell>
